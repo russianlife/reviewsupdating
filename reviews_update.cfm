@@ -4,7 +4,7 @@ don't reference the form or url scopes directly. --->
 <cfif len(trim($.event('reviewsid')))>
 
 <!--- avoid the use of CFUPDATE/CFINSERT use CFQUERY and write SQL instead --->
-<cfquery >
+<cfquery datasource="XXX" >
   UPDATE Reviews
   SET EHeadline = <cfqueryparam value="#$.event('EHeadline')#" cfsqltype="cf_sql_varchar" />
       EQuote = <cfqueryparam value="#$.event('EQuote')#" cfsqltype="cf_sql_varchar" />
