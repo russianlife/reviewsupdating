@@ -9,7 +9,7 @@ don't reference the form or url scopes directly. --->
   SET EHeadline = <cfqueryparam value="#$.event('EHeadline')#" cfsqltype="cf_sql_varchar" />
       EQuote = <cfqueryparam value="#$.event('EQuote')#" cfsqltype="cf_sql_varchar" />
       Display = <cfqueryparam value="#$.event('Display')#" cfsqltype="cf_sql_varchar" />
-  WHERE ReviewsID = <cfqueryparam value="#$.event('ReviewsID')#" cfsqltype="cf_sql_varchar" />
+  WHERE ReviewsID = <cfqueryparam value="#$.event('ReviewsID')#" cfsqltype="cf_sql_integer" />
 </cfquery>
 
 <cfoutput>
